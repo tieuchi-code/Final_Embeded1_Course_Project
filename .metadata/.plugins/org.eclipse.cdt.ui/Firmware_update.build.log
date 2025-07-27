@@ -1,0 +1,20 @@
+07:06:30 **** Incremental Build of configuration Debug for project Firmware_update ****
+make -j16 all 
+arm-none-eabi-gcc "../Core/Src/main.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F411xE -c -I../Core/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F4xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Core/Src/main.o"
+arm-none-eabi-gcc -o "Firmware_update.elf" @"objects.list"   -mcpu=cortex-m4 -T"C:\Users\Admin\Desktop\Code\Explain_Code_STM32\Final_Course_Project\Non_OS\Firmware_update\STM32F411VETX_FLASH.ld" --specs=nosys.specs -Wl,-Map="Firmware_update.map" -Wl,--gc-sections -static --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: Firmware_update.elf
+ 
+arm-none-eabi-size  Firmware_update.elf 
+arm-none-eabi-objdump -h -S Firmware_update.elf  > "Firmware_update.list"
+arm-none-eabi-objcopy  -O binary Firmware_update.elf  "Firmware_update.bin"
+   text	   data	    bss	    dec	    hex	filename
+   7180	     92	   1884	   9156	   23c4	Firmware_update.elf
+Finished building: default.size.stdout
+ 
+Finished building: Firmware_update.bin
+ 
+Finished building: Firmware_update.list
+ 
+
+07:06:31 Build Finished. 0 errors, 0 warnings. (took 596ms)
+

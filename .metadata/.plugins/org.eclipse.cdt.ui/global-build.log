@@ -1,0 +1,37 @@
+14:53:09 **** Incremental Build of configuration Debug for project Firmware_update_2 ****
+make -j16 all 
+arm-none-eabi-gcc -o "Firmware_update_2.elf" @"objects.list"   -mcpu=cortex-m4 -T"C:\Users\Admin\Desktop\Code\Explain_Code_STM32\Final_Course_Project\Non_OS\Firmware_update_2\STM32F411VETX_FLASH.ld" --specs=nosys.specs -Wl,-Map="Firmware_update_2.map" -Wl,--gc-sections -static --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: Firmware_update_2.elf
+ 
+arm-none-eabi-size  Firmware_update_2.elf 
+arm-none-eabi-objdump -h -S Firmware_update_2.elf  > "Firmware_update_2.list"
+arm-none-eabi-objcopy  -O binary Firmware_update_2.elf  "Firmware_update_2.bin"
+   text	   data	    bss	    dec	    hex	filename
+   3008	     12	   1588	   4608	   1200	Firmware_update_2.elf
+Finished building: default.size.stdout
+ 
+Finished building: Firmware_update_2.bin
+ 
+Finished building: Firmware_update_2.list
+ 
+14:54:08 **** Build of configuration Debug for project Application 1 ****
+make -j16 all 
+arm-none-eabi-size  Application\ 1.elf 
+   text	   data	    bss	    dec	    hex	filename
+   5420	     12	   1676	   7108	   1bc4	Application 1.elf
+Finished building: default.size.stdout
+ 
+14:54:24 **** Build of configuration Debug for project Application 2 ****
+make -j16 all 
+arm-none-eabi-size  Application\ 2.elf 
+   text	   data	    bss	    dec	    hex	filename
+   7772	     12	  67124	  74908	  1249c	Application 2.elf
+Finished building: default.size.stdout
+ 
+14:54:41 **** Build of configuration Debug for project Bootloader ****
+make -j16 all 
+arm-none-eabi-size  Bootloader.elf 
+   text	   data	    bss	    dec	    hex	filename
+   1060	      4	   1572	   2636	    a4c	Bootloader.elf
+Finished building: default.size.stdout
+ 

@@ -1,0 +1,21 @@
+Project Description
+
+Bootloader:
+	Reset -> App 1
+	Nhấn giữ User + Reset -> 2
+App 1:
+	-Đo nhiệt độ chip (ADC)
+	-Bật tắt LED
+	-Trả về kết quả UART (interrupt)
+App 2: 
+	-La bàn số dùng Magnetometer LSM303AGR (I2C)
+	-Chứa code update firmware
+	*Firmware update thế chỗ app1
+	*Update nhiều lần (kích thước dưới 64KB)
+Firmware update 1:
+	Detect độ nghiêng Accelometer LSM303AGR (I2C)
+	Nghiêng hướng nào nháy LED hướng đó
+	Trả kết quả độ nghiêng về qua UART
+Firmaware update 2: 
+	Detect rung lắc
+	Phát hiện rung lắc nháy LED liên tục

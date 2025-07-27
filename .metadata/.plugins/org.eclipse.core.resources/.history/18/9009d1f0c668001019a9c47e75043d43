@@ -1,0 +1,11 @@
+/*
+ * Firmware update :
+	-Detect di chuyển của bo mạch
+		Kết hợp accel (I2C) và gyro (SPI):
+		+accel > ngưỡng; gyro ~ 0
+		-> đang di chuyển -> di chuyển hướng nào sáng LED hướng đó
+		+accel ~ 1; gyro ~ 0
+		-> đo hướng trọng lực phát hiện nghiêng -> nghiêng hướng nào LED chớp nhanh hướng đó
+	-Detect đang nâng độ cao (4 led cùng sáng)
+	-Detect đang hạ độ cao hoặc rơi (4 led chớp nhanh liên lục)
+ */

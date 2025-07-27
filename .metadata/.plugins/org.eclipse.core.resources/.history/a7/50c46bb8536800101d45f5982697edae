@@ -1,0 +1,7 @@
+/*
+ * Bootloader:
+	-Reset nhảy vào app1
+	-Nhấn giữ nút user, reset nhảy vào app2
+ */
+
+#include "main.h"
