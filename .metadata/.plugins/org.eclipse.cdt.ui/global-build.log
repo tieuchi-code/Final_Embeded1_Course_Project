@@ -35,3 +35,66 @@ arm-none-eabi-size  Bootloader.elf
    1060	      4	   1572	   2636	    a4c	Bootloader.elf
 Finished building: default.size.stdout
  
+15:34:21 **** Incremental Build of configuration Debug for project Application 1 ****
+make -j16 all 
+arm-none-eabi-size  Application\ 1.elf 
+   text	   data	    bss	    dec	    hex	filename
+   5420	     12	   1676	   7108	   1bc4	Application 1.elf
+Finished building: default.size.stdout
+ 
+15:34:39 **** Incremental Build of configuration Debug for project Application 2 ****
+make -j16 all 
+arm-none-eabi-size  Application\ 2.elf 
+   text	   data	    bss	    dec	    hex	filename
+   7772	     12	  67124	  74908	  1249c	Application 2.elf
+Finished building: default.size.stdout
+ 
+15:35:01 **** Incremental Build of configuration Debug for project Bootloader ****
+make -j16 all 
+arm-none-eabi-size  Bootloader.elf 
+   text	   data	    bss	    dec	    hex	filename
+   1060	      4	   1572	   2636	    a4c	Bootloader.elf
+Finished building: default.size.stdout
+ 
+15:42:02 **** Incremental Build of configuration Debug for project Application 1 ****
+make -j16 all 
+arm-none-eabi-size  Application\ 1.elf 
+   text	   data	    bss	    dec	    hex	filename
+   5420	     12	   1676	   7108	   1bc4	Application 1.elf
+Finished building: default.size.stdout
+ 
+15:48:33 **** Incremental Build of configuration Debug for project Application 1 ****
+make -j16 all 
+arm-none-eabi-size  Application\ 1.elf 
+   text	   data	    bss	    dec	    hex	filename
+   5420	     12	   1676	   7108	   1bc4	Application 1.elf
+Finished building: default.size.stdout
+ 
+16:04:59 **** Incremental Build of configuration Debug for project Application 1 ****
+make -j16 all 
+arm-none-eabi-size  Application\ 1.elf 
+   text	   data	    bss	    dec	    hex	filename
+   5420	     12	   1676	   7108	   1bc4	Application 1.elf
+Finished building: default.size.stdout
+ 
+16:05:11 **** Incremental Build of configuration Debug for project Application 2 ****
+make -j16 all 
+arm-none-eabi-size  Application\ 2.elf 
+   text	   data	    bss	    dec	    hex	filename
+   7772	     12	  67124	  74908	  1249c	Application 2.elf
+Finished building: default.size.stdout
+ 
+16:05:23 **** Incremental Build of configuration Debug for project Bootloader ****
+make -j16 all 
+arm-none-eabi-size  Bootloader.elf 
+   text	   data	    bss	    dec	    hex	filename
+   1060	      4	   1572	   2636	    a4c	Bootloader.elf
+Finished building: default.size.stdout
+ 
+16:09:10 **** Incremental Build of configuration Debug for project Application 1 ****
+make -j16 all 
+arm-none-eabi-size  Application\ 1.elf 
+   text	   data	    bss	    dec	    hex	filename
+   5420	     12	   1676	   7108	   1bc4	Application 1.elf
+Finished building: default.size.stdout
+ 
